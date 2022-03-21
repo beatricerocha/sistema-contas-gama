@@ -1,23 +1,23 @@
 
 public class CadastroCliente {
-	private String agencia, conta, nome, email, telefone;
+	private int agencia;
+	private String conta, nome, email, telefone;
 	private float saldo;
-	
-	public CadastroCliente(String agencia, String conta, String nome, String email, String telefone, float saldo){
+
+	public CadastroCliente(int agencia, String conta, String nome, String email, String telefone, float saldo) {
 		this.agencia = agencia;
 		this.conta = conta;
 		this.nome = nome;
-		this.email = email; 
+		this.email = email;
 		this.telefone = telefone;
 		this.saldo = saldo;
 	}
 
-
-	public String getAgencia() {
+	public int getAgencia() {
 		return agencia;
 	}
 
-	public void setAgencia(String agencia) {
+	public void setAgencia(int agencia) {
 		this.agencia = agencia;
 	}
 
@@ -60,5 +60,5 @@ public class CadastroCliente {
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
 	}
-	
+
 }
